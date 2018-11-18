@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/javasaur/stegano#readme",
   "devDependencies": {
+    "@types/node": "^10.12.9",
     "gulp": "^4.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-typescript": "^5.0.0-alpha.3",
