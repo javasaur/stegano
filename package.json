@@ -1,0 +1,19 @@
+{
+  "name": "stegano",
+  "version": "1.0.0",
+  "description": "Steganography tool to hide information inside audiofiles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javasaur/stegano.git"
+  },
+  "author": "Fedor Chernogorskiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javasaur/stegano/issues"
+  },
+  "homepage": "https://github.com/javasaur/stegano#readme"
+}
