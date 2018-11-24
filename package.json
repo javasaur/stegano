@@ -7,7 +7,9 @@
     "start": "node dist/index.js",
     "dev": "gulp watch",
     "build": "gulp build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "testWithCoverage": "jest --coverage",
+    "lint": "tslint --project tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -20,10 +22,14 @@
   },
   "homepage": "https://github.com/javasaur/stegano#readme",
   "devDependencies": {
+    "@types/jest": "^23.3.9",
     "@types/node": "^10.12.9",
     "gulp": "^4.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-typescript": "^5.0.0-alpha.3",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "tslint": "^5.11.0",
     "typescript": "^3.1.6"
   }
 }
