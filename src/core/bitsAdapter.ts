@@ -11,12 +11,8 @@ class BitsAdapter {
         this._bits = []
     }
 
-    public getBits(count?: number): string {
-        if(!count || count > this._bits.length) {
-            return this._bits.join('')
-        }
-
-        return this._bits.splice(0, count).join('')
+    public getBitsAsString(count?: number): string {
+        return this._bits.splice(0, count ? count : this._bits.length).join('')
     }
 
     public storeBuffer(bytes: Buffer): boolean {
@@ -30,6 +26,14 @@ class BitsAdapter {
 
     protected _addToStorage = (byte: number): void => {
         this._bits.push(...this._padToByteLength(byte).split(''))
+    }
+
+    protected _flush = (): void => {
+        this._bits.length = 0
+    }
+
+    protected _getBitsStorage(): BitsStorage {
+        return [...this._bits]
     }
 
     protected _padToByteLength = (num: number): string => {
