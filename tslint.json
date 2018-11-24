@@ -1,4 +1,7 @@
 {
+    "linterOptions": {
+        "exclude": ["spec/**/*"]
+    },
     "rules": {
         "binary-expression-operand-order": true,
         "curly": true,
