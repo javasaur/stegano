@@ -1,10 +1,17 @@
 {
     "rules": {
+        "binary-expression-operand-order": true,
+        "curly": true,
         "eofline": true,
+        "file-name-casing": [true, "camel-case"],
         "max-file-line-count": [true, 300],
+        "new-parens": true,
         "no-duplicate-imports": true,
+        "no-duplicate-super": true,
+        "no-empty-interface": true,
         "no-magic-numbers": true,
         "no-require-imports": true,
+        "no-trailing-whitespace": true,
         "no-var-keyword": true,
         "object-literal-sort-keys": [true, "ignore-case"],
         "prefer-const": [true, {"destructuring": "any"}],
